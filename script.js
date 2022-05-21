@@ -26,7 +26,11 @@ import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9
   submitGroup.addEventListener("click", function(){
       let groupName = group.value
       if (groupName.length == 0){
-        alert("please enter a group name")  
+        alert("Please enter a group name")  
+        return
+      }
+      if (groupName.includes(" ")){
+        alert("Please enter a group name without spaces")  
         return
       }
 
@@ -49,10 +53,11 @@ import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9
         }
         
       }).catch((error) => {
+          alert("Error occured, change group name please")
           console.error(error);
       });
       linkgen.setAttribute("style", "display: block")
-      //linkgen.innerHTML = `<a href = "sashankbalusu.github.io/view.html/?group=${groupName}">sashankbalusu.github.io/view.html/?group=${groupName}</link>`
-      linkgen.value = `sashankbalusu.github.io/sixdegrees/view.html?group=${groupName}`
+      linkgen.innerHTML = `<a href = "https://www.sashankbalusu.github.io/sixdegrees/view.html?group=${groupName}">sashankbalusu.github.io/sixdegrees/view.html?group=${groupName}</a>`
+      //linkgen.value = `sashankbalusu.github.io/sixdegrees/view.html?group=${groupName}`
   })
 

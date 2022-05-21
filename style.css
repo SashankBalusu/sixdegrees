@@ -94,3 +94,18 @@ input {
 #groupHeader {
     text-align: center;
 }
+#linkgen {
+    margin: 0 auto;
+    overflow: auto;
+    border: 1px solid black;
+    padding: 2px;
+    text-align: justify;
+    background: transparent;
+    width: 98%;
+    height: 50px;
+    font-size: 17px;
+    padding: none;
+    border-radius: 4px; 
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

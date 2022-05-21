@@ -50,9 +50,12 @@ function createGraph(){
                         }
 
                     },
+                    credits: {
+                        enabled: false
+                    },
                 
                     title: {
-                        text: `Connections for ${groupName}`,
+                        text: `Connections for group '${groupName}'`,
                         style: {
                             color:"white",
                             fontSize: '30px',
@@ -113,8 +116,8 @@ addConnection.addEventListener("click", function(){
     label.setAttribute("alt", "Connection")
     label.setAttribute("placeholder", "Connection")
     console.log(label)
-    namesCon.insertBefore(label, namesCon.children[5]);
-    namesCon.insertBefore(input, namesCon.children[5]);
+    namesCon.insertBefore(label, namesCon.children[namesCon.children.length-4]);
+    namesCon.insertBefore(input, namesCon.children[namesCon.children.length-4]);
 
 })
 delConnection.addEventListener("click", function(){
