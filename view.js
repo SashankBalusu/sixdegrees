@@ -25,7 +25,13 @@ const graphCon = document.getElementById("groupCon")
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString)
+
+if (!(urlParams.has("group"))){
+    window.location = "doesntexist.html"
+}
+
 const groupName = urlParams.get("group")
+
 
 function createGraph(){
     let groupInfo
@@ -148,7 +154,6 @@ submitConnection.addEventListener("click", function(){
         connArr.push(connections[i].value.toLowerCase())
         
     }
-    //urlParams.has("group") use to check if it exists
     set(ref(database, "groups/" + groupName + "/" + user), {
         people: connArr
         
