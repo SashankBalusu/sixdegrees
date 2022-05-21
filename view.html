@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href= "style.css">
+    <link rel = "stylesheet" href= "view.css">
+
+</head>
+<body>
+    <div id = "main">
+        <div id = "userInput">
+
+            <div id = "namesCon">
+                <h1 style = "color: white;">Your Info</h1>
+                <input id = "username" required = ""type = "text"></input>
+                <label alt='Your Name' placeholder='Your Name'></label>
+                
+                <input id = "connection" class = "connectionInput" required = ""type = "text"></input>
+                <label alt='Connection' placeholder='Connection'></label>
+                
+                <button id = "addConnection">+</button>
+                <button id = "delConnection">-</button>
+    
+                <button id = "submitConnection">Submit Connection(s)</button>
+    
+            </div>
+            
+    
+        </div>
+        <div id = "graphCon">
+        </div>
+    </div>
+    
+    
+    <script src = "view.js" type = "module"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+
+</body>
+</html>

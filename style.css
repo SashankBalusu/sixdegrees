@@ -1,0 +1,96 @@
+body {
+    background: rgba(16, 39, 45, 0.7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;  */
+}
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(4em + 1px);
+    margin: 0 0 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #fff;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+input[type="text"][required]:focus {
+    border-color: black;
+}
+input[type="text"][required]:focus + label[placeholder]:before {
+    color: black;
+    font-weight: bold;
+
+}
+input[type="text"][required]:focus + label[placeholder]:before,
+input[type="text"][required]:valid + label[placeholder]:before {
+    transition-duration: .2s;
+    transform: translate(0, -1.2em) scale(0.9, 0.9);
+}
+
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+    content: attr(alt);
+}
+
+input[type="text"][required] + label[placeholder] {
+    display: block;
+    pointer-events: none;
+    line-height: 1em;
+    margin-top: calc(-3em - 2px);
+    margin-bottom: calc((3em - 1em) + 2px);
+}
+
+input[type="text"][required] + label[placeholder]:before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 calc(1em + 2px);
+    padding: 0 2px;
+    color: #898989;
+    white-space: nowrap;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#submitGroup {
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+    
+
+}
+textarea{
+    width: 98%;
+    height: 35px;
+    font-size: 17px;
+    padding: none;
+    border-radius: 4px; 
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input {
+    border-radius: 4px;
+    text-align: start;
+}
+#groupFormWrapper {
+    margin: 0 auto;
+    width: 20%;
+    margin-top: -40%;
+}
+#submitGroup {
+    padding-left:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#groupHeader {
+    text-align: center;
+}

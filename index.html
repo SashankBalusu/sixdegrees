@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div id="particles-js">
+        <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="902" height="451">
+        </canvas>
+    </div>
+    <div id = "groupFormWrapper">
+        <h1 id = "groupHeader"style = "color: white;">Create a group</h1>
+        <form id = "groupForm" style = "margin: 0 auto">
+            <input required='' id = "group" type='text'>
+            <label alt='Group Name' placeholder='Group Name'></label>
+            <input type = "button" value = "Generate Link" id = "submitGroup"></input>
+            <textarea style = "display: none;" id = "linkgen" readonly></textarea>
+        </form>
+
+    </div> 
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type = "module" src =  "script.js"></script>
+</body>
+</html>
