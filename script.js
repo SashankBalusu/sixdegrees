@@ -52,6 +52,7 @@ import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9
           console.error(error);
       });
       linkgen.setAttribute("style", "display: block")
-      linkgen.value = `sashankbalusu.github.io/view.html/?group=${groupName}`
+      //linkgen.innerHTML = `<a href = "sashankbalusu.github.io/view.html/?group=${groupName}">sashankbalusu.github.io/view.html/?group=${groupName}</link>`
+      linkgen.value = `sashankbalusu.github.io/sixdegrees/view.html/?group=${groupName}`
   })
 
